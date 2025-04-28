@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Bleunox-Contact</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/logos/little_logo.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <style>
+        .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.contact-form,
+.contact-info {
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour les sections */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form h2,
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1e3a8a; /* Couleur jaune */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: transparent;
+    border: 1px #d1d5db solid;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+
+}
+.contact-form input:hover{
+    border: #1e3a8a 1px solid;
+}
+.contact-form textarea:hover{
+    border: #1e3a8a 1px solid;
+}
+.contact-form input::placeholder{
+    color: #d1d5db;
+}
+.contact-form textarea::placeholder{
+    color:#d1d5db;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e3a8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0b1d4e; /* Couleur plus foncée au survol */
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+    color: #1e3a8a; /* Couleur jaune au survol */
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+}
+
+    </style>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">A Propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <!-- Formulaire de Contact -->
+                <div class="contact-form">
+                    <h2>Contacter Nous</h2>
+                    <form action="contact.php" method="POST">
+                        <input type="text" name="name" placeholder="Votre Nom" required>
+                        <input type="email" name="email" placeholder="Email adresse" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                </div>
+        
+                <!-- Informations de Contact -->
+                <div class="contact-info">
+                    <h2>Contacte</h2>
+                    <p><strong>Adresse :</strong><br>1Lorem ipsum dolor sit amet, consectetur elit.</p>
+                    <p><strong>Email :</strong><br>nomentreprise@gmail.com</p>
+                    <p><strong>Téléphone :</strong><br>XXX XXX XX</p>
+                    <div class="contact-icons">
+                        <a href="tel:XXX-XXX-XX" class="phone-icon"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:nomentreprise@gmail.com" class="email-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h1 class="footer-logo"> <span style="color: #d1d5db; font-size: 50px;">B</span>LEUNOX </h1>
+                    <ul class="footer-links">
+                        <li><a href="about.html">A propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Conditions d'utilisation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <ul class="social-links">
+                        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">Page Instagram</a></li>
+                        <li><a href="https://www.facebook.com" target="_blank">Page Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bleunox - Tous droits réservés</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

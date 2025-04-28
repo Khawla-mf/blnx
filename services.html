@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Bleunox-Services</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/logos/little_logo.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            #mainNav {
+    background-color: black !important;
+}
+.services-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8; /* Couleur de fond douce */
+    margin-top: 100px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1e3a8a; /* Bleu */
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 30%; /* Trois services par ligne */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Effet d'élévation au survol */
+}
+
+.icon-container {
+    background-color: #1e3a8a; /* Jaune */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #d1d5db;
+    
+}
+
+.service-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 14px;
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .service-item {
+        width: 48%; 
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-item {
+        width: 90%; 
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}
+.contact-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #1e3a8a; 
+    color: #d1d5db; 
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px; 
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #163a63; 
+    color: #f8f8f8;
+}
+        </style>
+    </head>
+<body >
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">A Propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="services" class="services-section">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-container">
+                <!-- Service Photographie Studio -->
+                <div class="service-item">
+                    <div class="icon-container">
+                        <i class="fas fa-camera-retro"></i> <!-- Icône pour la photographie en studio -->
+                    </div>
+                    <h3 class="service-title">Photographie Studio</h3>
+                    <p class="service-description">
+                        Capturons l'essence de vos moments précieux dans notre studio professionnel.
+                    </p>
+                </div>
+        
+                <!-- Service Photographie Extérieur -->
+                <div class="service-item">
+                    <div class="icon-container">
+                        <i class="fas fa-camera"></i> <!-- Icône pour la photographie en extérieur -->
+                    </div>
+                    <h3 class="service-title">Photographie Extérieur</h3>
+                    <p class="service-description">
+                        Des photos uniques et authentiques réalisées en plein air, capturant la beauté de la nature.
+                    </p>
+                </div>
+        
+                <!-- Service Photo Shoot -->
+                <div class="service-item">
+                    <div class="icon-container">
+                        <i class="fas fa-users"></i> <!-- Icône pour un shooting photo -->
+                    </div>
+                    <h3 class="service-title">Photo Shoot</h3>
+                    <p class="service-description">
+                        Pour des séances photo créatives et professionnelles adaptées à vos besoins.
+                    </p>
+                </div>
+        
+                <!-- Service Photo Food -->
+                <div class="service-item">
+                    <div class="icon-container">
+                        <i class="fas fa-utensils"></i> <!-- Icône pour la photographie de nourriture -->
+                    </div>
+                    <h3 class="service-title">Photo Food</h3>
+                    <p class="service-description">
+                        Sublimez vos plats avec des photos appétissantes qui captent tous les détails.
+                    </p>
+                </div>
+        
+                <!-- Service Montage Vidéo -->
+                <div class="service-item">
+                    <div class="icon-container">
+                        <i class="fas fa-video"></i> <!-- Icône pour le montage vidéo -->
+                    </div>
+                    <h3 class="service-title">Montage Vidéo</h3>
+                    <p class="service-description">
+                        Création de vidéos professionnelles pour des projets personnels ou d'entreprise.
+                    </p>
+                </div>
+        
+                <!-- Service Photographie Animaux -->
+                <div class="service-item">
+                    <div class="icon-container">
+                        <i class="fas fa-paw"></i> <!-- Icône pour la photographie d'animaux -->
+                    </div>
+                    <h3 class="service-title">Photographie Animaux</h3>
+                    <p class="service-description">
+                        Immortalisez vos animaux de compagnie dans des photos pleines de vie et d'émotion.
+                    </p>
+                </div>
+            </div>
+            <div class="contact-button-container">
+                <a href="contact.html" class="contact-button">Contactez-nous</a>
+            </div>
+            
+        </section>
+        
+        
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h1 class="footer-logo"> <span style="color: #d1d5db; font-size: 50px;">B</span>LEUNOX </h1>
+                    <ul class="footer-links">
+                        <li><a href="about.html">A propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Conditions d'utilisation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <ul class="social-links">
+                        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">Page Instagram</a></li>
+                        <li><a href="https://www.facebook.com" target="_blank">Page Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bleunox - Tous droits réservés</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

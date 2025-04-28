@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Bleunox</title>
+        <link rel="shortcut icon" href="images/logo.png" type="image/png">
+        <link rel="icon" type="image/png" href="assets/img/logos/little_logo.ico" sizes="75*75">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/logos/little_logo.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+        .section-bg {
+            
+            padding: 50px 0;
+        }
+        .section-heading {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #000000;
+        }
+        .section-text {
+            font-size: 1.25rem;
+            color: #2d2d2d;
+        }
+        .section-divider {
+            width: 150px;
+            height: 4px;
+            background-color: #1e3a8a;
+            margin: 31px 0;
+        }
+        .logo {
+            max-width: 150px;
+            margin-top: 20px;
+        }
+        .big_div {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .portfolio-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+        .portfolio-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+        .portfolio-card img {
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+        }
+        .portfolio-card-body {
+            padding: 20px;
+        }
+        .portfolio-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #343a40;
+        }
+        .portfolio-text {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        .portfolio-btn {
+            background-color: #1e3a8a;
+            color: #d1d5db;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .portfolio-btn:hover {
+            background-color: #1e3a8a;
+            color: #fff;
+        }
+        .photo-section {
+            position: relative;
+            background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Gradient noir semi-transparent */
+        url(assets/img/bg\ section.png); /* Remplacez par votre image */            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            padding: 50px;
+        }
+        .photo-section .content {
+            width: 50%;
+            height: 100%;
+            margin-top: 200px;
+        }
+        .photo-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        .photo-section p {
+            font-size: 1rem;
+            margin-bottom: 60px;
+        }
+        .photo-section .btn {
+            background-color: #1e3a8a;
+            color: #d1d5db;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .photo-section .btn:hover {
+            background-color: #0f1f4e;
+            color: #ffffff;
+        }
+        @media (max-width: 768px) {
+    .photo-section {
+        padding: 30px; /* Réduit le padding pour les petits écrans */
+        justify-content: center; /* Centre le contenu */
+    }
+
+    .photo-section .content {
+        width: 80%; /* Augmente la largeur pour occuper plus d'espace */
+        margin-top: 50px; /* Réduit l'espace du haut */
+        text-align: center; /* Centre le texte */
+    }
+
+    .photo-section h2 {
+        font-size: 2rem; /* Réduit la taille du titre */
+        margin-bottom: 20px; /* Réduit l'espace sous le titre */
+    }
+
+    .photo-section p {
+        font-size: 0.9rem; /* Réduit la taille du texte */
+        margin-bottom: 30px; /* Réduit l'espace sous le texte */
+    }
+
+    .photo-section .btn {
+        font-size: 0.9rem; /* Réduit la taille du bouton */
+        padding: 8px 16px; /* Réduit le padding du bouton */
+        border-radius: 15px; /* Réduit les coins du bouton */
+    }
+}
+@media (min-width: 770px) and (max-width: 1055px) {
+    .photo-section {
+        padding: 30px; /* Réduit le padding pour les écrans moyens */
+        justify-content: center; /* Centre le contenu sur des écrans moyens */
+    }
+
+    .photo-section .content {
+        width: 60%; /* Augmente la largeur du contenu pour mieux s'adapter */
+        margin-top: 150px; /* Ajuste la marge supérieure */
+        text-align: left; /* Garde le texte à gauche */
+    }
+
+    .photo-section h2 {
+        font-size: 2.2rem; /* Réduit la taille du titre pour les écrans moyens */
+        margin-bottom: 25px; /* Ajuste l'espace sous le titre */
+    }
+
+    .photo-section p {
+        font-size: 1rem; /* Garde la taille du texte cohérente */
+        margin-bottom: 40px; /* Réduit l'espace sous le texte */
+    }
+
+    .photo-section .btn {
+        font-size: 1rem; /* Ajuste la taille du texte du bouton */
+        padding: 12px 24px; /* Ajuste la taille du bouton */
+        border-radius: 25px; /* Améliore les coins du bouton */
+    }
+}
+
+/* Media query pour les petits écrans (<770px) */
+@media (max-width: 770px) {
+    .photo-section {
+        padding: 20px; /* Réduit encore plus le padding */
+        justify-content: center;
+    }
+
+    .photo-section .content {
+        width: 80%; /* Augmente la largeur du contenu pour les petits écrans */
+        margin-top: 100px; /* Réduit la marge supérieure */
+        text-align: center; /* Centre le texte */
+    }
+
+    .photo-section h2 {
+        font-size: 1.8rem; /* Réduit la taille du titre */
+        margin-bottom: 15px; /* Réduit l'espace sous le titre */
+    }
+
+    .photo-section p {
+        font-size: 0.9rem; /* Réduit la taille du texte */
+        margin-bottom: 25px; /* Réduit l'espace sous le texte */
+    }
+
+    .photo-section .btn {
+        font-size: 0.9rem; /* Ajuste la taille du bouton */
+        padding: 10px 20px; /* Réduit la taille du bouton */
+        border-radius: 20px; /* Réduit les coins du bouton */
+    }
+}
+.services-section {
+    margin-top: 100px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e3a8a; /* Yellow color */
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.cta-container {
+    margin-top: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #1e3a8a; /* Yellow color */
+    color: #d1d5db;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #081843;
+    color: #d1d5db;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+
+    .section-title {
+        font-size: 28px; /* Slightly smaller title */
+    }
+
+    .service-title {
+        font-size: 16px; /* Smaller title on images */
+    }
+
+    .cta-button {
+        padding: 12px 25px; /* Smaller button on mobile */
+        font-size: 14px; /* Adjust button text size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; /* 1 column for small screens (phones) */
+    }
+
+    .section-title {
+        font-size: 24px; /* Even smaller title for very small screens */
+    }
+
+    .service-title {
+        font-size: 14px; /* Smaller title text */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Even smaller button */
+        font-size: 12px; /* Adjust button text size */
+    }
+}
+.studio-gallery {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e3a8a; /* Jaune */
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    width: 250px;
+    scroll-snap-align: start;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.gallery-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.gallery-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+    background-color: #d1d5db;
+    border-radius: 5px;
+}
+
+.gallery-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+.portfolio-button-container {
+    margin-top: 30px;
+}
+
+.portfolio-button {
+    display: inline-block;
+    background-color: #1e3a8a; /* Jaune */
+    color: #d1d5db;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.portfolio-button:hover {
+    background-color: #0f245f; /* Couleur plus foncée au survol */
+    color: #d1d5db;
+}
+
+
+/* Design Responsive */
+@media screen and (max-width: 768px) {
+    .gallery-container {
+        gap: 15px;
+    }
+
+    .gallery-item {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-item {
+        width: 150px;
+    }
+}
+    </style>
+        
+    </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.png" alt="Photo"  /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil<a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">A Propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading" style="color: #d1d5db;">Bienvenue Chez BLEUNOX </div>
+                <div class="masthead-heading text-uppercase">Joie de vous connaitre</div>
+                <a class="btn btn-primary btn-xl text-uppercase portfolio-btn " href="#more" style="background-color: #1e3a8a; border-color: #1e3a8a;">More</a>
+            </div>
+        </header>
+        <!-- Informations -->
+        <div class="container text-center section-bg big_div" id="more">
+            <h3 class="section-heading">Nous SOMMES bien plus qu'un studio de photographie</h3>
+            <div class="section-divider"></div>
+            <p class="section-text">
+                Chez <strong>BLEUNOX</strong>, nous créons des souvenirs inoubliables à travers une photographie professionnelle sur mesure.
+                Spécialisés dans les mariages, portraits, événements et shootings corporate, nous offrons des services adaptés à chaque besoin.
+            </p>
+            <p class="section-text">
+                Avec une approche créative et un grand souci du détail, nous mettons en valeur votre image et capturons l’essence de chaque moment,
+                qu'il s'agisse de souvenirs personnels ou de projets professionnels.
+            </p>
+            <img src="assets/img/navbar-logo.png" alt="Logo" class="logo">
+        </div>
+    
+        <!-- Bootstrap JS -->
+         <!-- Portfolio Section -->
+    <div class="container portfolio-section ">
+        <h2 class="text-center mb-5">Portfolio</h2>
+        <div class="row">
+            <!-- Portfolio Card 1 -->
+            <div class="col-lg-6 col-md-12 ">
+                <div class="portfolio-card">
+                    <img src="assets/img/portfolio/Image1.jpg" alt="Studio Image">
+                    <div class="portfolio-card-body">
+                        <h3 class="portfolio-title">Studio</h3>
+                        <p class="portfolio-text">Nous proposons des séances photo sur mesure, adaptées à vos besoins. Que ce soit pour un portrait professionnel, une séance familiale, ou un projet créatif, notre studio offre un environnement confortable et moderne pour capturer les meilleurs moments.
+                        </p>
+                        <button class="portfolio-btn">Portfolio Studio</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Card 2 -->
+            <div class="col-lg-6 col-md-12">
+                <div class="portfolio-card">
+                    <img src="assets/img/portfolio/Image2.jpg" alt="Exterior Image" >
+                    <div class="portfolio-card-body">
+                        <h3 class="portfolio-title">Extérieur</h3>
+                        <p class="portfolio-text">Nos séances photo en extérieur capturent la beauté naturelle des paysages et l'authenticité des moments en plein air. Que ce soit dans un parc, en ville, ou à la plage, chaque lieu devient un décor unique pour créer des souvenirs mémorables.</p>
+                        <button class="portfolio-btn">Portfolio Extérieur</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="photo-section">
+        <div class="content">
+            <h2>Transformez vos moments en souvenirs inoubliables</h2>
+            <p>Que ce soit pour un portrait, un shooting en extérieur ou un événement, notre studio est l'endroit idéal pour capturer des images exceptionnelles. Réservez votre shooting dès maintenant et créez des souvenirs inoubliables !</p>
+            <a href="contact.html" class="btn">Réserver un shooting</a>
+        </div>
+    </div>
+   
+    <section id="services" class="services-section">
+        <h2 class="section-title">Nos Services</h2>
+        <div class="grid">
+            <div class="service-item">
+                <img src="assets/img/portfolio/Image1.jpg" alt="Service 1">
+                <div class="service-title">Studio</div>
+            </div>
+            <div class="service-item">
+                <img src="assets/img/portfolio/Image2.jpg" alt="Service 2">
+                <div class="service-title">Exterieur</div>
+            </div>
+            <div class="service-item">
+                <img src="assets/img/portfolio/Image3.jpg" alt="Service 3">
+                <div class="service-title">Photo Shoot</div>
+            </div>
+            <div class="service-item">
+                <img src="assets/img/portfolio/Image4.jpg" alt="Service 4">
+                <div class="service-title">Photo Food</div>
+            </div>
+            <div class="service-item">
+                <img src="assets/img/portfolio/Image5.jpg" alt="Service 5">
+                <div class="service-title">Montage video</div>
+            </div>
+            <div class="service-item">
+                <img src="assets/img/portfolio/Image6.jpg" alt="Service 6">
+                <div class="service-title">Photo Animals</div>
+            </div>
+        </div>
+        <div class="cta-container">
+            <a href="services.html" class="cta-button">Découvrez nos services</a>
+        </div>
+    </section>
+    <section id="studio-gallery" class="studio-gallery">
+        <h2 class="section-title">Quelques Photos de Notre Studio</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="assets/img/portfolio/G1.jpg" alt="Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/portfolio/G2.jpg" alt="Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/portfolio/G3.jpg" alt="Photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/portfolio/G4.jpg" alt="Photo 4">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/portfolio/G5.jpg" alt="Photo 5">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/portfolio/G6.jpg" alt="Photo 6">
+            </div>
+        </div>
+        <div class="portfolio-button-container">
+            <a href="portfolio.html" class="portfolio-button">Voir notre Portfolio</a>
+        </div>
+        
+    </section>
+    
+
+
+    <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h1 class="footer-logo"> <span style="color: #d1d5db; font-size: 50px;">B</span>LEUNOX </h1>
+                    <ul class="footer-links">
+                        <li><a href="about.html">A propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Conditions d'utilisation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <ul class="social-links">
+                        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">Page Instagram</a></li>
+                        <li><a href="https://www.facebook.com" target="_blank">Page Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bleunox - Tous droits réservés</p>
+            </div>
+        </footer>
+        
+        
+    </body>
+</html>
